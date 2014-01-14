@@ -24,12 +24,15 @@ If you currently use pw, take these steps to convert to Abraxas:
 
 #. Move to the directory that contains pw and change its name to abraxas::
 
-      mv pw abraxas
+      mv password abraxas
 
-#. Move into the abraxas directory and update and install the program::
+#. Move into the abraxas directory, clean the directory and then update and 
+   install the program::
 
       cd abraxas
+      ./clean
       git pull
+      ./install
 
 #. Rename the config directory::
 
@@ -44,7 +47,7 @@ If you currently use pw, take these steps to convert to Abraxas:
       from abraxas.charstets import (
 
    Then edit the log_file and archive_file settings in the accounts file and 
-   change pw to abraxas.
+   change ``pw`` to ``abraxas``.
 
 #. Finally, edit the hot key setting for your window manager so that it runs::
 
