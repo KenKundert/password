@@ -26,12 +26,13 @@ If you currently use pw, take these steps to convert to Abraxas:
 
       mv password abraxas
 
-#. Move into the abraxas directory, clean the directory and then update and 
-   install the program::
+#. Move into the abraxas directory, clean the directory and then update, test 
+   and install the program::
 
       cd abraxas
       ./clean
       git pull
+      ./test
       ./install
 
 #. Rename the config directory::
